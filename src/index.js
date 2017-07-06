@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 const routes = require('./routes/routes')
 
+
 /* Initilialization */
 import './inc/seeds';
 
