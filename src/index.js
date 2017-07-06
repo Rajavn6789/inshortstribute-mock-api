@@ -3,8 +3,10 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const mongoose = require('mongoose');
+//fallback for deprecation
 mongoose.Promise = Promise;
 
+//initial settings
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
